@@ -1,0 +1,6 @@
+beacon:
+    maxBeaconLimit: 5
+    slotPrice: [0,100,1000,5000,10000,20000,50000,100000,500000]
+    craftSchema: 'resource/tp_beacon_orig.schematic'
+    activeSchema: 'resource/tp_beacon_active.schematic'
+keepBookOnDeath: false

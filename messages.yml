@@ -1,0 +1,36 @@
+# Colors:
+# &0-9, &a-f
+# {0}, {1}, {2}, etc are variables. You can swap them around, but adding a new variable won't work. Removing them will work
+
+book_name: "&e传送手册"
+
+beacon_book:
+    free_slot: "空余槽"
+    buy_tag: "&1价格：&6{0}$"
+    
+warning:
+    not_enough_money: "&c钱不够，需要&6{0}$"
+    name_too_long: "&c名字不能超过&6{0}&c个字"
+    name_changed: "&1成功更名为&6{0}"
+    price_changed: "&1价格改为&6{0}$"
+    price_change_failed: "&c价格更改失败"
+    not_allowed_touch: "&c你不能碰&6{0}&c的信标"
+    beacon_over_budget: "&c请购买更多信标槽，现已使用 &6{0}/{0}&c 个槽"
+    teleport_starting: "&e正在准备传送！请站稳！"
+    teleport_success: "&2传送完成！"
+    addbeacon_success: "&2成功添加&6{0}&2到你的手册"
+    removebeacon_success: "&2成功将&6{0}&2从你的手册移除"
+    addbeacon_failed: "&c你的传送手册太小，装不下更多的传送点了"
+beacon_sign:
+    name: "&1{0}"
+    owner: "&3建造人：&6{0}"
+    cost: "&3花费：&6{0}$"
+    used_times: "&3使用次数: &6{0}"
+    default_name: "{0}的信标"
+report:
+    earning: "&a信标&6{0}&a让你挣了&6{1}$"
+    max_beacon_reached: "&c你已经不能制造更多信标了"
+    cant_afford: "&c你买不起这个信标槽"
+    buy_success: "&2恭喜你！成功解锁第&6{0}&2个信标"
+    input_name: "&a<请输入信标名称> &6{0}"
+    input_price: "&a<请输入价格> &6{0}"

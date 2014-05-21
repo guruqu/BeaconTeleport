@@ -1,0 +1,9 @@
+name: BeaconTeleport
+main: fun.guruqu.portal.PortalBeaconPlugin
+version: 0.1
+website: http://qun.qzone.qq.com/group/174612852/home
+softdepend: [Herochat, Vault, Spout]
+commands:
+  pb:
+    description: Portal Beacon Commands
+    usage: "There's no help right now!"

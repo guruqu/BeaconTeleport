@@ -1,0 +1,6 @@
+#non relevant source/eclipse
+bin/*
+libs/*
+.project
+.classpath
+.settings/*
