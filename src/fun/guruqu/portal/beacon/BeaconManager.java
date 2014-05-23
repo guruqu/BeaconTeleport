@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
+import java.lang.Math;
 
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
@@ -166,4 +167,41 @@ public class BeaconManager {
 		}
 		return true;
 	}
+
+// TO DO : incompleted
+	public BeaconProfile getClosestBeacon(Location location)
+	{
+		BeaconProfile profile = null;
+		return profile;
+	}
+
+	public boolean isBeaconInRange(Location location, int range)
+	{
+		List<StrippedLocation> beaconLocation = blockManager
+				.findAllBlockWithKey("beacon_sign_" + guid);
+		if (location == null || beaconLocation == null)
+			return false;
+
+		for (StrippedLocation li : beaconLocation) 
+		{
+			int xDis = location.getX() - li.x;
+			int zDis = location.getZ() - li.z;
+
+			if(xDis<=range || z<=range)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public int getDistanceToBeacon(Location location, BeaconProfile beacon)
+	{
+		int xDis = location.getX() - beacon.getLocation().x;
+		int zDis = location.getZ() - beacon.getLocation().z;
+
+		int Distance = double(Math.pow(xDis,2)+Math.pow(zDis,2));
+		return Distance;
+	}
+
 }

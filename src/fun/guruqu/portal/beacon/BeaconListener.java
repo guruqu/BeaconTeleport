@@ -331,6 +331,17 @@ public class BeaconListener implements Listener {
 				return;
 			}
 
+			// check if within another beacon's protect range
+			if (beaconManager.isBeaconInRange(event.getLastBlockEvent().getBlock()
+					.getLocation(), 100)) 
+			{
+				player.sendMessage(MessageUtil.getMessage(
+						"warning.beacon_too_close", ""));
+				return;
+			}
+
+
+			// finally it works!
 			Firework firework = player.getWorld().spawn(player.getLocation(),
 					Firework.class);
 
