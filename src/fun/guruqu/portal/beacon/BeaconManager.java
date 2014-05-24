@@ -184,8 +184,8 @@ public class BeaconManager {
 
 		for (StrippedLocation li : beaconLocation) 
 		{
-			int xDis = location.getX() - li.x;
-			int zDis = location.getZ() - li.z;
+			int xDis = Math.abs(location.getX() - li.x);
+			int zDis = Math.abs(location.getZ() - li.z);
 
 			if(xDis<=range || z<=range)
 			{
