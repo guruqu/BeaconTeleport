@@ -21,6 +21,7 @@ warning:
     addbeacon_success: "&2成功添加&6{0}&2到你的手册"
     removebeacon_success: "&2成功将&6{0}&2从你的手册移除"
     addbeacon_failed: "&c你的传送手册太小，装不下更多的传送点了"
+    beacon_too_close: "这块地附近已经有信标了"
 beacon_sign:
     name: "&1{0}"
     owner: "&3建造人：&6{0}"
